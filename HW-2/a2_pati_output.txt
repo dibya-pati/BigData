@@ -1,0 +1,135 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2017.11.27 01:35:35 =~=~=~=~=~=~=~=~=~=~=~=
+spark-submit --conf spark.port.maxRetries=70 Assignment2_1.py 
+17/11/27 06:36:30 INFO SparkContext: Running Spark version 2.2.0
+17/11/27 06:36:32 INFO SparkContext: Submitted application: Assignment2
+17/11/27 06:36:32 INFO SecurityManager: Changing view acls to: dpati
+17/11/27 06:36:32 INFO SecurityManager: Changing modify acls to: dpati
+17/11/27 06:36:32 INFO SecurityManager: Changing view acls groups to: 
+17/11/27 06:36:32 INFO SecurityManager: Changing modify acls groups to: 
+17/11/27 06:36:32 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(dpati); groups with view permissions: Set(); users  with modify permissions: Set(dpati); groups with modify permissions: Set()
+17/11/27 06:36:33 INFO Utils: Successfully started service 'sparkDriver' on port 40897.
+17/11/27 06:36:33 INFO SparkEnv: Registering MapOutputTracker
+17/11/27 06:36:33 INFO SparkEnv: Registering BlockManagerMaster
+17/11/27 06:36:33 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+17/11/27 06:36:33 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+17/11/27 06:36:34 INFO DiskBlockManager: Created local directory at /mnt/tmp/blockmgr-8220e4a2-6572-48ca-bfb6-939df433ab36
+17/11/27 06:36:34 INFO MemoryStore: MemoryStore started with capacity 413.9 MB
+17/11/27 06:36:34 INFO SparkEnv: Registering OutputCommitCoordinator
+17/11/27 06:36:35 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+17/11/27 06:36:35 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+17/11/27 06:36:35 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+17/11/27 06:36:35 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+17/11/27 06:36:35 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+17/11/27 06:36:35 WARN Utils: Service 'SparkUI' could not bind on port 4045. Attempting port 4046.
+17/11/27 06:36:35 INFO Utils: Successfully started service 'SparkUI' on port 4046.
+17/11/27 06:36:35 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://ip-172-31-35-19.ec2.internal:4046
+17/11/27 06:36:36 INFO Utils: Using initial executors = 3, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+17/11/27 06:36:39 INFO RMProxy: Connecting to ResourceManager at ip-172-31-35-19.ec2.internal/172.31.35.19:8032
+17/11/27 06:36:40 INFO Client: Requesting a new application from cluster with 45 NodeManagers
+17/11/27 06:36:40 INFO Client: Verifying our application has not requested more than the maximum memory capability of the cluster (23424 MB per container)
+17/11/27 06:36:40 INFO Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+17/11/27 06:36:40 INFO Client: Setting up container launch context for our AM
+17/11/27 06:36:40 INFO Client: Setting up the launch environment for our AM container
+17/11/27 06:36:40 INFO Client: Preparing resources for our AM container
+17/11/27 06:36:45 WARN Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+17/11/27 06:36:52 INFO Client: Uploading resource file:/mnt/tmp/spark-6fb05683-c24a-4c1b-8a78-26e1dad80d38/__spark_libs__2621420903257499978.zip -> hdfs://ip-172-31-35-19.ec2.internal:8020/user/dpati/.sparkStaging/application_1511754044714_0274/__spark_libs__2621420903257499978.zip
+17/11/27 06:36:56 INFO Client: Uploading resource file:/etc/spark/conf/hive-site.xml -> hdfs://ip-172-31-35-19.ec2.internal:8020/user/dpati/.sparkStaging/application_1511754044714_0274/hive-site.xml
+17/11/27 06:36:56 INFO Client: Uploading resource file:/usr/lib/spark/python/lib/pyspark.zip -> hdfs://ip-172-31-35-19.ec2.internal:8020/user/dpati/.sparkStaging/application_1511754044714_0274/pyspark.zip
+17/11/27 06:36:56 INFO Client: Uploading resource file:/usr/lib/spark/python/lib/py4j-0.10.4-src.zip -> hdfs://ip-172-31-35-19.ec2.internal:8020/user/dpati/.sparkStaging/application_1511754044714_0274/py4j-0.10.4-src.zip
+17/11/27 06:36:57 INFO Client: Uploading resource file:/mnt/tmp/spark-6fb05683-c24a-4c1b-8a78-26e1dad80d38/__spark_conf__1703608540087126821.zip -> hdfs://ip-172-31-35-19.ec2.internal:8020/user/dpati/.sparkStaging/application_1511754044714_0274/__spark_conf__.zip
+17/11/27 06:36:57 INFO SecurityManager: Changing view acls to: dpati
+17/11/27 06:36:57 INFO SecurityManager: Changing modify acls to: dpati
+17/11/27 06:36:57 INFO SecurityManager: Changing view acls groups to: 
+17/11/27 06:36:57 INFO SecurityManager: Changing modify acls groups to: 
+17/11/27 06:36:57 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(dpati); groups with view permissions: Set(); users  with modify permissions: Set(dpati); groups with modify permissions: Set()
+17/11/27 06:36:57 INFO Client: Submitting application application_1511754044714_0274 to ResourceManager
+17/11/27 06:36:57 INFO YarnClientImpl: Submitted application application_1511754044714_0274
+17/11/27 06:36:57 INFO SchedulerExtensionServices: Starting Yarn extension services with app application_1511754044714_0274 and attemptId None
+17/11/27 06:36:58 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:36:58 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1511764617562
+	 final status: UNDEFINED
+	 tracking URL: http://ip-172-31-35-19.ec2.internal:20888/proxy/application_1511754044714_0274/
+	 user: dpati
+17/11/27 06:36:59 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:00 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:01 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:02 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:03 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:04 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:05 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:06 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:07 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:08 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:09 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:10 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:11 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:12 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:13 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+17/11/27 06:37:13 INFO YarnClientSchedulerBackend: Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> ip-172-31-35-19.ec2.internal, PROXY_URI_BASES -> http://ip-172-31-35-19.ec2.internal:20888/proxy/application_1511754044714_0274), /proxy/application_1511754044714_0274
+17/11/27 06:37:13 INFO JettyUtils: Adding filter: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+17/11/27 06:37:13 INFO Client: Application report for application_1511754044714_0274 (state: ACCEPTED)
+17/11/27 06:37:14 INFO Client: Application report for application_1511754044714_0274 (state: RUNNING)
+17/11/27 06:37:14 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 172.31.39.48
+	 ApplicationMaster RPC port: 0
+	 queue: default
+	 start time: 1511764617562
+	 final status: UNDEFINED
+	 tracking URL: http://ip-172-31-35-19.ec2.internal:20888/proxy/application_1511754044714_0274/
+	 user: dpati
+17/11/27 06:37:14 INFO YarnClientSchedulerBackend: Application application_1511754044714_0274 has started running.
+17/11/27 06:37:14 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 32779.
+17/11/27 06:37:14 INFO NettyBlockTransferService: Server created on 172.31.35.19:32779
+17/11/27 06:37:14 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+17/11/27 06:37:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.31.35.19, 32779, None)
+17/11/27 06:37:14 INFO BlockManagerMasterEndpoint: Registering block manager 172.31.35.19:32779 with 413.9 MB RAM, BlockManagerId(driver, 172.31.35.19, 32779, None)
+17/11/27 06:37:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.31.35.19, 32779, None)
+17/11/27 06:37:14 INFO BlockManager: external shuffle service port = 7337
+17/11/27 06:37:14 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.31.35.19, 32779, None)
+17/11/27 06:37:16 INFO EventLoggingListener: Logging events to hdfs:///var/log/spark/apps/application_1511754044714_0274
+17/11/27 06:37:16 INFO Utils: Using initial executors = 3, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+17/11/27 06:37:16 INFO YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after waiting maxRegisteredResourcesWaitingTime: 30000(ms)
+17/11/27 06:37:16 INFO SharedState: loading hive config file: file:/etc/spark/conf.dist/hive-site.xml
+17/11/27 06:37:16 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('hdfs:///user/spark/warehouse').
+17/11/27 06:37:16 INFO SharedState: Warehouse path is 'hdfs:///user/spark/warehouse'.
+17/11/27 06:37:18 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+***************Q1****printing the filenames for Sanity check**********
+['3677454_2025195.zip', '3677500_2035190.zip', '3677501_2035195.zip', '3677542_2045190.zip', '3678097_025195.zip', '3677502_2035200.zip', '3677558_2050190.zip', '3678096_025192.zip', '3678125_027195.zip', '3677524_2040195.zip', '3678098_025197.zip', '3678157_030197.zip', '3678190_032192.zip', '3678192_032197.zip', '3677453_2025190.zip', '3678223_035192.zip', '3678224_035195.zip', '3678155_030192.zip', '3678193_032200.zip', '3678156_030195.zip', '3678226_035200.zip', '3678124_027192.zip', '3678126_027197.zip', '3678258_037197.zip', '3678327_042195.zip', '3678256_037192.zip', '3678259_037200.zip', '3678191_032195.zip', '3678225_035197.zip', '3678390_047190.zip', '3841519_K7B11.zip', '3678257_037195.zip', '3678291_040192.zip', '3678358_045190.zip', '3678360_045195.zip', '3678326_042192.zip', '3678359_045192.zip', '3678292_040195.zip', '3678519_060190.zip', '3678478_055190.zip', '3678520_060192.zip', '3841522_K7B15.zip', '3678295_040202.zip', '3678500_057190.zip', '3841528_K7B7.zip', '3841539_K7D2.zip'] 
+
+***************Q1-e**************
+[array([114, 111, 109, 114], dtype=uint8), array([ 54,  53,  57, 117], dtype=uint8), array([ 79,  70,  66, 123], dtype=uint8), array([61, 57, 63, 84], dtype=uint8)]
+**********checking size*********
+**********End checking size*********
+***************Q2-f**************
+[['3677454_2025195.zip-1', array([ 1, -1, -1, ..., -1,  1,  1])], ['3677454_2025195.zip-18', array([ 1,  1, -1, ...,  1,  1,  1])]]
+***************Q3-b**************
+***********3677454_2025195.zip-1***********
+['3678520_060192.zip-6', '3841528_K7B7.zip-44', '3678225_035197.zip-44', '3841539_K7D2.zip-27', '3677558_2050190.zip-9', '3678292_040195.zip-39', '3678224_035195.zip-54', '3678157_030197.zip-8', '3678358_045190.zip-9', '3677454_2025195.zip-1', '3678295_040202.zip-50', '3678226_035200.zip-50', '3678157_030197.zip-24', '3677501_2035195.zip-7', '3678519_060190.zip-19', '3678097_025195.zip-45', '3678520_060192.zip-47', '3678360_045195.zip-39', '3678359_045192.zip-22', '3678097_025195.zip-35', '3678155_030192.zip-31', '3678190_032192.zip-34']
+***********3677454_2025195.zip-18***********
+['3678295_040202.zip-16', '3678125_027195.zip-20', '3677542_2045190.zip-13', '3678520_060192.zip-42', '3678360_045195.zip-46', '3678360_045195.zip-40', '3678157_030197.zip-20', '3841539_K7D2.zip-21', '3678291_040192.zip-10', '3841528_K7B7.zip-0', '3678096_025192.zip-18', '3678258_037197.zip-17', '3678359_045192.zip-52', '3841539_K7D2.zip-41', '3678326_042192.zip-22', '3678225_035197.zip-13', '3678225_035197.zip-7', '3678292_040195.zip-22', '3678192_032197.zip-24', '3678519_060190.zip-32', '3677454_2025195.zip-18', '3677542_2045190.zip-24']
+***************Q3-c**************
+**********Print Eucledian Distance of similar images for 2 given images*********
+***********Eucledian for 3677454_2025195.zip-1***********
+[('3677454_2025195.zip-1', 0.0), ('3677501_2035195.zip-7', 4.2351496213450233), ('3678224_035195.zip-54', 4.4314111225731798), ('3678155_030192.zip-31', 4.5125709231819116), ('3678519_060190.zip-19', 4.8822566541038146), ('3841539_K7D2.zip-27', 4.9292384116928609), ('3677558_2050190.zip-9', 4.9953690572412359), ('3678225_035197.zip-44', 5.2356002889231057), ('3678292_040195.zip-39', 5.3242906861745647), ('3678295_040202.zip-50', 5.3779404037389904), ('3678097_025195.zip-45', 5.5246872567850218), ('3678226_035200.zip-50', 5.7364532937229615), ('3678190_032192.zip-34', 5.8122290277331912), ('3841528_K7B7.zip-44', 5.9886720583950988), ('3678358_045190.zip-9', 6.0720141702900845), ('3678520_060192.zip-6', 6.2071563325653125), ('3678157_030197.zip-24', 6.2782038260669086), ('3678360_045195.zip-39', 6.3027454912478333), ('3678520_060192.zip-47', 6.3437914868250731), ('3678359_045192.zip-22', 6.3912880258886533), ('3678097_025195.zip-35', 6.4269602434188204), ('3678157_030197.zip-8', 62.390076719424556)]
+***********Eucledian for 3677454_2025195.zip-18***********
+[('3677454_2025195.zip-18', 0.0), ('3678157_030197.zip-20', 2.9048832363437014), ('3678519_060190.zip-32', 3.6825770627763932), ('3678225_035197.zip-13', 3.8143190534409452), ('3678291_040192.zip-10', 3.9480110972297928), ('3678096_025192.zip-18', 4.3057698996211853), ('3678360_045195.zip-46', 4.4698593228238099), ('3678258_037197.zip-17', 4.5226227538703725), ('3841539_K7D2.zip-41', 4.6519903283328317), ('3678292_040195.zip-22', 4.8098201546521491), ('3678125_027195.zip-20', 4.8621492508827773), ('3678326_042192.zip-22', 4.9466918903097117), ('3841528_K7B7.zip-0', 4.9802382162629302), ('3678295_040202.zip-16', 5.046378004182003), ('3677542_2045190.zip-24', 5.0806048053643664), ('3678359_045192.zip-52', 5.302752247920421), ('3678192_032197.zip-24', 5.4188531098507227), ('3841539_K7D2.zip-21', 5.7601330067346685), ('3678225_035197.zip-7', 5.8466949463981894), ('3677542_2045190.zip-13', 6.0632313727477225), ('3678360_045195.zip-40', 6.3915995641253156), ('3678520_060192.zip-42', 6.7807320991176976)]
+
+
+########################Bonus 3d#########################################################################
+
+
+***************Q3-c Bonus****************
+**********Print Eucledian Distance of similar images for 2 given images*********
+***********Eucledian for 3677454_2025195.zip-1***********
+[('3677454_2025195.zip-1', 0.0), ('3678326_042192.zip-30', 2.8186193581904893), ('3678500_057190.zip-20', 3.1671939832907925), ('3678156_030195.zip-46', 3.6313778299464503), ('3678124_027192.zip-41', 3.7725446637076305), ('3678256_037192.zip-47', 4.3310100293537692), ('3678360_045195.zip-43', 4.4434478268770317), ('3678478_055190.zip-1', 4.5792147580956657), ('3678359_045192.zip-45', 4.8149686905287421), ('3678155_030192.zip-1', 4.8189349655749982), ('3678359_045192.zip-8', 4.8856237432213527), ('3678390_047190.zip-10', 4.9088306760438511), ('3678358_045190.zip-18', 5.0052655674666333), ('3678225_035197.zip-32', 5.1896741236259798), ('3678224_035195.zip-9', 5.3084872963511662), ('3678226_035200.zip-33', 5.3538461197542535), ('3677502_2035200.zip-6', 5.4687494691591434), ('3677524_2040195.zip-2', 5.4834030740901794), ('3678096_025192.zip-20', 5.8122581378806988), ('3678155_030192.zip-31', 5.8556002044394599), ('3678360_045195.zip-35', 6.5859034537035486), ('3678191_032195.zip-44', 6.9616001558489762), ('3678126_027197.zip-42', 7.1686233048399268), ('3677558_2050190.zip-0', 132.7434019287694)]
+***********Eucledian for 3677454_2025195.zip-18***********
+[('3677454_2025195.zip-18', 0.0), ('3678520_060192.zip-29', 3.9005230258238366), ('3677500_2035190.zip-2', 4.3625920801194882), ('3678190_032192.zip-26', 4.4847059689420661), ('3678226_035200.zip-15', 4.63554028580681), ('3678327_042195.zip-37', 5.0351580418844248), ('3678258_037197.zip-8', 5.4825542493662383), ('3678190_032192.zip-14', 5.8717281704604769), ('3678291_040192.zip-26', 5.9011920909843125), ('3678295_040202.zip-46', 5.9677036941070742), ('3678192_032197.zip-8', 6.0130378212960025), ('3678500_057190.zip-52', 6.0836818470655789), ('3678257_037195.zip-18', 6.1370031719337614), ('3678224_035195.zip-8', 6.228497743911241), ('3678360_045195.zip-48', 6.5038861395714207), ('3678223_035192.zip-37', 6.5393796738091776), ('3678327_042195.zip-29', 6.743080677505179), ('3678258_037197.zip-29', 6.7869893531061454), ('3678390_047190.zip-3', 6.9302422166764028), ('3678295_040202.zip-26', 7.4951072888913055)]
+]0;dpati@ip-172-31-35-19:~[dpati@ip-172-31-35-19 ~]$ 
