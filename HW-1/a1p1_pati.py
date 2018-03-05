@@ -17,7 +17,7 @@ import re
 # PART I. MapReduce
 
 
-class MyMapReduce:  #[TODO]
+class MyMapReduce:  
     __metaclass__ = ABCMeta
 
     def __init__(self, data, num_map_tasks=5, num_reduce_tasks=3):  #[DONE]
